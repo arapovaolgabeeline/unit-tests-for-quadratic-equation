@@ -14,6 +14,16 @@ public class Main {
 
         double[] solved = QuadraticEquation.solve(a, b, c);
 
-        System.out.println("Result is: " + solved[0] + " and " + solved[1]);
+        switch (solved.length) {
+            case 2:
+                System.out.println("Result is: " + solved[0] + " and " + solved[1]);
+                break;
+            case 1:
+                System.out.println("Result is: " + solved[0]);
+                break;
+            case 0:
+                System.out.println("Doesn't exist real roots");
+                break;
+        }
     }
 }
