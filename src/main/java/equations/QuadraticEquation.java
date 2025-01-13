@@ -3,10 +3,11 @@ package equations;
 public class QuadraticEquation {
     public static double e = 0.001;
 
-    public static double[] solve(double a, double b, double c) {
-        if (Math.abs(a) < Math.abs(e)) {
+    public static double[] solve(Double a, Double b, Double c) {
+        if (a == null || b == null || c == null || Math.abs(a) < Math.abs(e)) {
             throw new IllegalArgumentException();
         }
+
         double discriminant = b * b - 4 * a * c;
         if (discriminant < -e) {
             return new double[]{};
