@@ -36,7 +36,7 @@ public class QuadraticEquationTest {
      */
     @Test
     public void shouldReturnArrayWith1Double() {
-        double[] solvedEquation = QuadraticEquation.solve(1, 2, 1);
+        double[] solvedEquation = QuadraticEquation.solve( 1 + QuadraticEquation.e * 0.1, 2, 1);
 
         assertEquals(1, solvedEquation.length);
         assertEquals(0, Arrays.compare(new double[]{-1}, solvedEquation));
