@@ -1,7 +1,7 @@
 package equations;
 
 public class QuadraticEquation {
-    public static double e = 0.0000001;
+    public static double e = 0.001;
 
     public static double[] solve(double a, double b, double c) {
         if (Math.abs(a) < Math.abs(e)) {
